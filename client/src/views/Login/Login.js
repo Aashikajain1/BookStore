@@ -2,7 +2,6 @@ import { React, useState } from 'react'
 import { Link} from "react-router-dom";
 import axios from 'axios'
 import toast from 'react-hot-toast'
-import Home from '../Home/Home.js'
 import './Login.css';
 import bg1 from './b1.jpg'
 function Login() {
@@ -27,7 +26,7 @@ function Login() {
     
           if (response.data.message === "Login successful") {
             toast.success(response.data.message);
-            window.location.href = <Home/>;
+            window.location.href ="/home";
           } else {
             toast.error(response.data.message);
             setEmail('');
