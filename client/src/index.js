@@ -1,29 +1,34 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap/dist/js/bootstrap.min.js"
+import "bootstrap/dist/js/bootstrap.min.js";
 import {
   createBrowserRouter,
   RouterProvider
 } from "react-router-dom";
-import NewNote from './views/NewNote/NewNote';
-import Home from './views/Home/Home';
-import UpdateNote from './views/UpdateNote/UpdateNote';
+import Home from './views/Home/Home.js'
+import Login from "./views/Login/Login.js"
+import SignUp from "./views/SignUp/SignUp.js"
 import { Toaster } from 'react-hot-toast';
+import Shop from './views/Shop/Shop.js';
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home />
+    element: <SignUp/>
   },
   {
-    path: "/new-note",
-    element: <NewNote />
+    path: "/home",
+    element: <Home/>
   },
   {
-    path: "/update/:id",
-    element: <UpdateNote />
-  }
+    path: "/books",
+    element: <Shop/>
+  },
+  {
+    path: "/login",
+    element: <Login/>
+  },
 ]);
 
 

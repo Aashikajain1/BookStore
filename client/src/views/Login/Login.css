@@ -1,0 +1,224 @@
+.custom-placeholder::-webkit-input-placeholder {
+    /* WebKit browsers */
+    color: rgb(242, 235, 239);
+    font-weight: bold;
+}
+
+.custom-placeholder {
+    border: none;
+    border-bottom: 2px solid rgb(91, 1, 16);
+}
+
+.box {
+    box-shadow: inset 0px 0px 10px pink;
+    backdrop-filter: blur(10px);
+}
+
+.con {
+    margin: 5% 24%;
+    box-shadow: 10px 5px 10px black;
+    backdrop-filter: blur(10px);
+}
+
+.button {
+    background: linear-gradient(45deg, rgb(61, 1, 9), rgb(247, 104, 128));
+    border: "none";
+    margin-left: 24%;
+    width: 150px;
+}
+p {
+    font-size:large;
+    position: relative;
+    bottom:110px;
+    left:53%;
+}
+
+@media (max-width:480px) {
+    * {
+        margin: 0;
+        padding: 0
+    }
+
+    .img {
+        display: none;
+    }
+
+    .box {
+        box-shadow: none;
+    }
+
+    strong {
+        font-size: smaller;
+        position: relative;
+        right:50px;
+        bottom: 20px;
+    }
+
+    .custom-placeholder {
+        font-size: smaller;
+        width:140px;
+        position: relative;
+        right: 50px;
+        bottom: 20px;
+    }
+
+    h2 {
+        color: white;
+        text-align: center;
+        margin-bottom: 70px;
+    }
+
+    h1 {
+        color:white;
+        position: relative;
+        top: 0px;
+    }
+
+    p {
+        font-size:9px;
+        position: relative;
+        bottom:50px;
+        left:80px;
+    }
+
+    .button {
+        width: 100px;
+        position: relative;
+        top: 0px;
+        right:17px;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width:768px) {
+    * {
+        margin: 0;
+        padding: 0
+    }
+
+    form {
+        width: 700px;
+    }
+
+    .img {
+        display: none;
+    }
+
+    .box {
+        box-shadow: none;
+    }
+
+    strong {
+        font-size: larger;
+        position: relative;
+        bottom: 20px;
+    }
+
+    .custom-placeholder {
+        font-size: large;
+        position: relative;
+        bottom: 20px;
+    }
+
+    h2 {
+        color: white;
+        text-align: center;
+        margin-bottom: 70px;
+    }
+
+    h1 {
+        color: white;
+        position: relative;
+        top: 0px;
+        left: 90%;
+    }
+
+    p {
+        font-size: smaller;
+        position: relative;
+        bottom:60px;
+        left:25%;
+    }
+
+    .button {
+        width: 100px;
+        position: relative;
+        top: 0px;
+        left: 60%;
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px){
+    * {
+        margin: 0;
+        padding: 0
+    }
+
+    form {
+        width: 700px;
+    }
+    .box {
+        box-shadow: none;
+    }
+
+    strong {
+        font-size: larger;
+        position: relative;
+        bottom: 20px;
+    }
+
+    .custom-placeholder {
+        font-size: large;
+        position: relative;
+        bottom: 20px;
+    }
+
+    h2 {
+        color: white;
+        text-align: center;
+        margin-bottom: 70px;
+    }
+
+    h1 {
+        color: white;
+        position: relative;
+        top: 0px;
+    }
+
+    p {
+        font-size:small;
+        position: relative;
+        bottom:70px;
+        left:52%;
+    }
+
+    .button {
+        width: 100px;
+    }
+
+}
+@media (min-width: 1025px) and (max-width: 1280px) {
+    p {
+        font-size: smaller;
+        position: relative;
+        bottom:100px;
+        left:55%;
+    }
+    strong {
+        font-size: larger;
+        position: relative;
+        bottom: 20px;
+        right:30px
+    }
+
+    .custom-placeholder {
+        font-size: large;
+        width:250px;
+        position: relative;
+        bottom: 20px;
+        right:30px;
+    }
+    .button {
+        width: 150px;
+        position: relative;
+        right:25px;
+    }
+}
