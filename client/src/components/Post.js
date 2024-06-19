@@ -9,10 +9,10 @@ function Post( {author, title, description,cover_image,publication_year}) {
               <img src={cover_image} alt="..." className='img-fluid w-100' style={{height:200}}/>
               <h5 className='text-warning'>{title}</h5>
               <div className='d-flex flex-wrap justify-content-between'>
-                <h3 className='ms-1'>Author:-{author}</h3>
-                <h3 className='me-2'>Publication Year:-{publication_year}</h3>
+                <h6 className='ms-1'>Author:-{author}</h6>
+                <h6 className='me-2'>Publication Year:-{publication_year}</h6>
               </div>
-              <h3 className='fs-5'>{description}</h3>
+              <h6 className='fs-5'>{description}</h6>
      </div>
     
   )
