@@ -1,5 +1,5 @@
 import { React, useState } from 'react'
-import { Link} from "react-router-dom";
+import { Link,useNavigate} from "react-router-dom";
 import axios from 'axios'
 import toast from 'react-hot-toast'
 import './Login.css';
@@ -7,6 +7,7 @@ import bg1 from './b1.jpg'
 function Login() {
     const [email, setEmail] = useState()
     const [password, setPassword] = useState()
+    const navigate =useNavigate()
     const backgroundImageStyle = {
         backgroundImage: `url(${bg1})`,
         backgroundSize: 'cover',
@@ -26,7 +27,7 @@ function Login() {
     
           if (response.data.message === "Login successful") {
             toast.success(response.data.message);
-            window.location.href ="/home";
+            navigate('/home');
           } else {
             toast.error(response.data.message);
             setEmail('');
