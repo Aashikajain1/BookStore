@@ -15,37 +15,28 @@ function Login() {
         width: '100vw', // adjust width as needed
         boxShadow: 'inset 30px 30px 40px black',
     };
-    const handleSubmit= async () => {
-        const response = await axios.post(`${process.env.REACT_APP_API_URL}/login`,
-            {
-                email,
-                password
-            })
-            if(response.data.message === "Login successful"){
-                console.log(response.data.message);
-                window.location.href = '/home';
-                toast.success(response.data.message);
-            }
-            else{
-                console.log(response.data.message)
-                toast.error(response.data.message);
-                setEmail('');
-                setPassword('');
-            }
-    }
-   /* const handleSubmit = (e) => {
-        const response = axios.post(`${process.env.REACT_APP_API_URL}/login`, { email: email, password: password })
-
-            .then(result => {
-                console.log(result)
-                if (result.data === "success") {
-                    navigate('/home');
-                    toast.success(response.data.message)
-                }
-            })
-            .catch(err => toast.faliure(response.data.message)
-            )
-    }*/
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+    
+        try {
+          const response = await axios.post(`${process.env.REACT_APP_API_URL}/login`, {
+            email,
+            password,
+          });
+    
+          if (response.data.message === "Login successful") {
+            toast.success(response.data.message);
+            window.location.href = '/home';
+          } else {
+            toast.error(response.data.message);
+            setEmail('');
+            setPassword('');
+          }
+        } catch (error) {
+          toast.error("An error occurred during login. Please try again.");
+          setEmail('');
+          setPassword('');
+        }}
     return (
         <div style={backgroundImageStyle} className='fixed-top'>
             <h2 className='text-center text-light mt-5'>Welcome to the world of MYSTERY....!!</h2>
