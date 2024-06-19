@@ -18,17 +18,17 @@ function Login() {
     const handleSubmit= async () => {
         const response = await axios.post(`${process.env.REACT_APP_API_URL}/login`,
             {
-                email: email,
-                password: password
+                email,
+                password
             })
             if(response.data.message === "Login successful"){
                 console.log(response.data.message);
-                window.location.href = '/home'
+                window.location.href = '/home';
                 toast.success(response.data.message);
             }
             else{
-                console.log(response.data.message);
-                toast.faliure(response.data.message);
+                console.log(response.data.message)
+                toast.error(response.data.message);
                 setEmail('');
                 setPassword('');
             }
