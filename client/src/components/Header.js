@@ -11,13 +11,13 @@ function Header() {
         <div class="collapse navbar-collapse" id="navbarText">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <Link class="nav-link active text-warning" to="/">Home</Link>
+              <Link class="nav-link active text-warning" to="/home">Home</Link>
             </li>
             <li class="nav-item">
-              <Link class="nav-link text-warning" to="/authors">Contact Us</Link>
+              <Link class="nav-link text-warning" to="/contact/:id">Contact Us</Link>
             </li>
             <li class="nav-item">
-              <Link class="nav-link active text-warning" to="/logout">About</Link>
+              <Link class="nav-link active text-warning" to="/about">About</Link>
             </li>
             <li class="nav-item">
               <Link class="nav-link active text-warning" to="/books">Shop</Link>

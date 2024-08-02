@@ -11,14 +11,16 @@ import Login from "./views/Login/Login.js"
 import SignUp from "./views/SignUp/SignUp.js"
 import { Toaster } from 'react-hot-toast';
 import Shop from './views/Shop/Shop.js';
-
+import Contact from './views/Contact/Contact.js';
+import About from './views/About/About.js';
+import BuyNow from './views/Buy/Buy.js';
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/s",
     element: <SignUp/>
   },
   {
-    path: "/home",
+    path: "/",
     element: <Home/>
   },
   {
@@ -29,6 +31,18 @@ const router = createBrowserRouter([
     path: "/login",
     element: <Login/>
   },
+  {
+    path:'/contact/:id',
+    element:<Contact/>
+  },
+  {
+    path:'/about',
+    element:<About/>
+  },
+  {
+    path:'/buy/:id',
+    element:<BuyNow/>
+  }
 ]);
 
 

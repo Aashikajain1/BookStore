@@ -2,11 +2,12 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import toast from 'react-hot-toast'
 import { Link } from 'react-router-dom';
-import bg2 from './bg2.jpg'
+import bg2 from './bg2.avif'
+import bg1 from './bg1.jpg'
 import '../Login/Login.css'
 function SignUp() {
     const backgroundImageStyle = {
-        backgroundImage: `url(${bg2})`,
+        backgroundImage: `url(${bg1})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         height: '100vh', // adjust height as needed
@@ -33,12 +34,12 @@ function SignUp() {
     return (
         
             <div style={backgroundImageStyle}  className='fixed-top '>
-                    <h2 className='text-center text-light mt-5'>Welcome to the world of MYSTERY....!!</h2>
+                    <h2 className='text-center text-warning mt-5'>Welcome to the world of MYSTERY....!!</h2>
                     <div className='d-flex con '>
                         <img src={bg2} alt='.....' className='w-50 img' />
-                        <div className='bg-transparent rounded text-danger-emphasis fixed-center w-50 fs-5 '>
+                        <div className='bg-transparent rounded text-warning fixed-center w-50 fs-5 '>
                             <div className='box p-5'>
-                                <h1 className='text-center text-light'>SignUp</h1><br />
+                                <h1 className='text-center text-warning'>SignUp</h1><br />
                                 <form className='w-100'>
                                 <div className='mb-3 ms-3' >
                                     <label htmlFor='email'>
@@ -86,7 +87,7 @@ function SignUp() {
                             </div>
                         </div>
                     </div>
-                    <p className='text-light'>Already Registered ?<Link to="/login" className='text-decoration-none'>Login or SignIn</Link></p>
+                    <p className='text-warning'>Already Registered ?<Link to="/login" className='text-decoration-none'>Login or SignIn</Link></p>
                 </div>
            
 

@@ -23,6 +23,10 @@ const bookSchema = new Schema({
     publication_year:{
         type: Number,
         required: true
+    },
+    price: {
+        type: Number,
+        required: true
     }
 })
 

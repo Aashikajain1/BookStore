@@ -1,11 +1,8 @@
 import React from 'react';
-
-function Post( {author, title, description,cover_image,publication_year}) {
-  /* <a href="/" className='bg-primary text-light text-decoration-none fs-5 rounded p-1'>Read More</a>*/
-
-  return (
-    
-    <div className='shadow mb-5 bg-dark bg-gradient text-light rounded ms-3'style={{width:"400px"}}>
+import { Link } from 'react-router-dom';
+function Post( {_id,author, title, description,cover_image,publication_year,price}) {
+  return (  
+    <div className='shadow mb-5 bg-dark bg-gradient text-light rounded mx-3'style={{width:"400px",height:"360px"}}>
               <img src={cover_image} alt="..." className='img-fluid w-100' style={{height:200}}/>
               <h5 className='text-warning'>{title}</h5>
               <div className='d-flex flex-wrap justify-content-between'>
@@ -13,9 +10,11 @@ function Post( {author, title, description,cover_image,publication_year}) {
                 <h6 className='me-2'>Publication Year:-{publication_year}</h6>
               </div>
               <h6 className='fs-5'>{description}</h6>
+              <div className='d-flex flex-wrap justify-content-between mx-2'>
+              <h4 className='text-warning'>Price: ₹{price}</h4>
+              <Link to={`/buy/${_id}`} className=' btn btn-outline-warning text-decoration-none fs-5 rounded p-1 w-50 text-center'>BuyNow</Link>
+              </div>
      </div>
-    
   )
 }
-
 export default Post;                            

@@ -6,6 +6,7 @@ dotenv.config();
 import md5 from "js-md5";
 import Book from './models/Book.js'
 import User from "./models/User.js";
+import Contact from "./models/Contact.js";
 const app = express()
 app.use(express.json())
 app.use(cors())
@@ -54,10 +55,10 @@ app.post('/signup', async (req, res) => {
         password: md5(password)
     })
     try {
-        const savedUser = await user.save();
+        const savedMessage = await user.save();
         res.json({
             success: true,
-            data: savedUser,
+            data: savedMessage,
             message: 'Signup successful'
         })
     }
@@ -97,11 +98,11 @@ app.post('/login', async (req, res) => {
 
 
 app.post("/books", async (req, res) => {
-    const {author,name,description,cover_image,publication_year} = req.body;
-    if (!name) {
+    const {author,title,description,cover_image,publication_year} = req.body;
+    if (!title) {
         return res.json({
             success: false,
-            message: "Name is required",
+            message: "title is required",
             data: null
         })
     }
@@ -135,12 +136,20 @@ app.post("/books", async (req, res) => {
             data: null
         })
     }
+    if (!price) {
+        return res.json({
+            success: false,
+            message: "price is required",
+            data: null
+        })
+    }
     const newBook = await Book.create({
-        "name": name,
+        "title": title,
         "author": author,
         "description": description,
         "publication_year":publication_year,
-        "cover_image":cover_image
+        "cover_image":cover_image,
+        "price":price,
     })
 
     res.json({
@@ -155,6 +164,17 @@ app.get("/books", async (req, res) => {
         sucess: true,
         message: "book fetched Successfully",
         data: book
+    })
+})
+app.get("/buy/:id",async (req, res) => {
+    const { id } = req.params
+
+    const Bk = await Book.findById(id)
+
+    res.json({
+        success: Bk ? true : false,
+        data: Bk || null,
+        message: Bk ? "Book fetched successfully" : "Book not found"
     })
 })
 app.listen(PORT, () => {

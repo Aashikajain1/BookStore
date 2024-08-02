@@ -1,8 +1,7 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
-import Services from '../Services/Services';
+import Services from '../Services/Services.js';
 import Bg from './bg.jpg'
 import C1 from './c1.jpg'
 import C2 from './c2.jpg'
@@ -13,21 +12,19 @@ function Home() {
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     height: '100vh', // adjust height as needed
-    width: '100vw', // adjust width as needed
     boxShadow: 'inset 30px 30px 40px black',
 };
+
   return (
     <div>
       <Header />
-      <div className="mt-0" style={backgroundImageStyle}>
+      <div className="mt-0 vw-100" style={backgroundImageStyle}>
         <br /><br /><br />
         <h3 className=" text-warning fs-1 ms-5 "><b>Welcome to the World Of Imagination! </b></h3>
         <h3 className="text-white fs-1 ms-5">Hold a conversation with the Author, </h3>
         <h3 className="text-white ms-5" >Get Lost in the Pages , Where Words Come to Life..</h3>
         <h3 className="text-white ms-5" >Discover, Dream, Dive In!!!</h3>
         <button className="btn btn-outline-light btn-lg ms-5 " ><a href="#box" className="nav-link active ">Explore</a></button>
-        <button type="button" className="btn btn-outline-light btn-lg ms-3"><Link to="/login">Login</Link></button>
-
       </div>
       <div id="carouselExampleCaptions" className="carousel slide my-5 mx-5">
         <div className="carousel-indicators">
@@ -62,9 +59,7 @@ function Home() {
           <span className="visually-hidden">Next</span>
         </button>
       </div>
-      <div>
-        <Services />
-      </div>
+      <Services />
       <Footer />
     </div>
   )
