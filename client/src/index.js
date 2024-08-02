@@ -16,11 +16,11 @@ import About from './views/About/About.js';
 import BuyNow from './views/Buy/Buy.js';
 const router = createBrowserRouter([
   {
-    path: "/s",
+    path: "/",
     element: <SignUp/>
   },
   {
-    path: "/",
+    path: "/home",
     element: <Home/>
   },
   {

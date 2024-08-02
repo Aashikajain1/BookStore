@@ -58,7 +58,7 @@ function Login() {
                                     type='email'
                                     placeholder='Enter Email'
                                     name='email'
-                                    className=' bg-transparent custom-placeholder  '
+                                    className=' bg-transparent custom-placeholder text-light'
                                     onChange={(e) => setEmail(e.target.value)}
                                 />
                             </div>
@@ -70,7 +70,7 @@ function Login() {
                                     type='password'
                                     placeholder='Enter Password'
                                     name='password'
-                                    className='bg-transparent custom-placeholder'
+                                    className='bg-transparent custom-placeholder text-light'
                                     onChange={(e) => setPassword(e.target.value)}
                                 />
                             </div>
@@ -81,7 +81,7 @@ function Login() {
                     </div>
                 </div>
             </div>
-            <p className='text-warning'>New User?Create New Account <Link className='text-decoration-none' to="/">SignUp</Link></p>
+            <p className='text-warning'>New User?Create New Account <Link className='text-decoration-none text-light' to="/">SignUp</Link></p>
         </div>
 
     )

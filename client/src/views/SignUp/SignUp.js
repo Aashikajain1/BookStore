@@ -51,7 +51,7 @@ function SignUp() {
                                         onChange={(e) => {
                                             setName(e.target.value);
                                         }}
-                                        className=' bg-transparent custom-placeholder  '
+                                        className=' bg-transparent custom-placeholder text-light'
                                     /><br />
                                     </div>
                                     <div className='mb-3 ms-3'>
@@ -64,7 +64,7 @@ function SignUp() {
                                         onChange={(e) => {
                                             setEmail(e.target.value);
                                         }}
-                                        className=' bg-transparent custom-placeholder  ' /><br />
+                                        className=' bg-transparent custom-placeholder text-light' /><br />
                                         </div>
                                         <div className='mb-3 ms-3'>
                                     <label htmlFor='email'>
@@ -76,7 +76,7 @@ function SignUp() {
                                         onChange={(e) => {
                                             setPassword(e.target.value);
                                         }}
-                                        className=' bg-transparent custom-placeholder  ' /><br /></div>
+                                        className=' bg-transparent custom-placeholder text-light' /><br /></div>
                                     <button
                                         type='button'
                                         onClick={addUser}
@@ -87,7 +87,7 @@ function SignUp() {
                             </div>
                         </div>
                     </div>
-                    <p className='text-warning'>Already Registered ?<Link to="/login" className='text-decoration-none'>Login or SignIn</Link></p>
+                    <p className='text-warning'>Already Registered ?<Link to="/login" className='text-decoration-none text-light'>Login or SignIn</Link></p>
                 </div>
            
 
