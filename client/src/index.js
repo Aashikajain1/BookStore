@@ -16,11 +16,11 @@ import About from './views/About/About.js';
 import BuyNow from './views/Buy/Buy.js';
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/signup",
     element: <SignUp/>
   },
   {
-    path: "/home",
+    path: "/",
     element: <Home/>
   },
   {
@@ -32,7 +32,7 @@ const router = createBrowserRouter([
     element: <Login/>
   },
   {
-    path:'/contact/:id',
+    path:'/contact',
     element:<Contact/>
   },
   {

@@ -10,7 +10,7 @@ function Login() {
     const [password, setPassword] = useState()
     const navigate = useNavigate()
     const backgroundImageStyle = {
-        backgroundColor:`black`,
+        backgroundColor: `black`,
         backgroundImage: `url(${bg2})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
@@ -29,7 +29,13 @@ function Login() {
 
             if (response.data.message === "Login successful") {
                 toast.success(response.data.message);
-                navigate('/home');
+                localStorage.setItem('currentUser', JSON.stringify(response.data.data))
+
+                toast.loading('Redirecting to dashboard...')
+
+                setTimeout(() => {
+                    window.location.href = '/'
+                }, 3000)
             } else {
                 toast.error(response.data.message);
                 setEmail('');
@@ -81,7 +87,7 @@ function Login() {
                     </div>
                 </div>
             </div>
-            <p className='text-warning'>New User?Create New Account <Link className='text-decoration-none text-light' to="/">SignUp</Link></p>
+            <p className='text-warning'>New User?Create New Account <Link className='text-decoration-none text-light' to="/signup">SignUp</Link></p>
         </div>
 
     )

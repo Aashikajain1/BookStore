@@ -1,4 +1,5 @@
-import React from 'react'
+import React,{useEffect} from 'react'
+import toast from 'react-hot-toast'
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import Services from '../Services/Services.js';
@@ -6,7 +7,17 @@ import Bg from './bg.jpg'
 import C1 from './c1.jpg'
 import C2 from './c2.jpg'
 import C3 from './c3.jpg'
+import { Link } from 'react-router-dom';
 function Home() {
+  useEffect(() => {
+    const currentUser = JSON.parse(localStorage.getItem('currentUser'))
+    if(currentUser){
+      
+    }
+    if(!currentUser){
+      window.location.href = '/login'
+    }
+  }, [])
   const backgroundImageStyle = {
     backgroundImage: `url(${Bg})`,
     backgroundSize: 'cover',
@@ -24,7 +35,7 @@ function Home() {
         <h3 className="text-white fs-1 ms-5">Hold a conversation with the Author, </h3>
         <h3 className="text-white ms-5" >Get Lost in the Pages , Where Words Come to Life..</h3>
         <h3 className="text-white ms-5" >Discover, Dream, Dive In!!!</h3>
-        <button className="btn btn-outline-light btn-lg ms-5 " ><a href="#box" className="nav-link active ">Explore</a></button>
+        <button className="btn btn-outline-light btn-lg ms-5 "><Link to="/books" className="nav-link active ">Explore</Link></button>
       </div>
       <div id="carouselExampleCaptions" className="carousel slide my-5 mx-5">
         <div className="carousel-indicators">
@@ -59,6 +70,16 @@ function Home() {
           <span className="visually-hidden">Next</span>
         </button>
       </div>
+      <span className=" p-2 text-center text-dark bg-warning"  style={{height:"40px",position:"fixed",right:"10px",top:"10px",cursor:"pointer",boxShadow:"0 0 10px grey"}} onClick={() => {
+        localStorage.clear()
+        toast.success('Logged out successfully')
+
+        setTimeout(()=>{
+          window.location.href = '/login'
+        }, 3000)
+      }}>
+        Logout
+      </span>
       <Services />
       <Footer />
     </div>

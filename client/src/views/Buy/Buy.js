@@ -31,6 +31,7 @@ function Buy() {
   }
   return (
     <div className='bg-dark'>
+      <h1 className='text-center text-warning text-decoration-underline'>Buy Now</h1>
       <div className='position-absolute top-50 start-50 translate-middle bg-dark' style={{ width: "600px" }}>
         <img src={image} className="img-fluid" alt='loading' />
         <h4 className="text-warning">{title}</h4>

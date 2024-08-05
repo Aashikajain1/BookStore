@@ -177,6 +177,61 @@ app.get("/buy/:id",async (req, res) => {
         message: Bk ? "Book fetched successfully" : "Book not found"
     })
 })
+app.get("/contact/:id",async(req,res)=>{
+    const {id} = req.params
+    const contact = await User.findById(id)
+    res.json({
+        success: contact ? true: false,
+        data:contact || null,
+        message:contact? "user fetched successfully":"user not found"
+    })
+})
+app.post("/contact",async(req,res)=>{
+    const { name, email,msg } = req.body;
+    if(!name){
+        return res.json({
+          success: false,
+          message: "name is required",
+          data: null
+        })
+      }
+    
+      if(!email){
+        return res.json({
+          success: false,
+          message: "email is required",
+          data: null
+        })
+      }
+    
+      if(!msg){
+        return res.json({
+          success: false,
+          message: "message is required",
+          data: null
+        })
+      }
+    const cntct = new Contact({
+        name: name,
+        email: email,
+        msg: msg
+    })
+    try {
+        const savedMessage = await cntct.save();
+        res.json({
+            success: true,
+            data: savedMessage,
+            message: 'Message Send successfully'
+        })
+    }
+    catch (e) {
+        res.json({
+            success: false,
+            data: null,
+            message: e.message
+        })
+    }
+})
 app.listen(PORT, () => {
     console.log(`server is running on port ${PORT}`)
 })

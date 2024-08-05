@@ -1,6 +1,6 @@
 import React from 'react';
 import p1 from "./c2.png";
-import p2 from "./b1.jpg";
+import p2 from "./p3.jpeg";
 import p3 from "./extra.gif";
 import p4 from "./p4.jpg"
 import Header from '../../components/Header';
@@ -50,7 +50,7 @@ const About = () => {
                 <h2 className='text-light text-center rounded-bottom' style={{boxShadow: "inset 0px 0px 10px rgb(246, 206, 6)" }} >Aashika Jain</h2>
               </div>
               <div className=" text-white border-2 rounded " >
-                <img className="rounded-top" src={p4} style={{ height: "340px", width: "300px" }} />
+                <img className="rounded-top" src={p2} style={{ height: "340px", width: "300px" }} />
                 <h2 className='text-light text-center  border border-bottom-0 border-warning' style={{boxShadow: "inset 0px 0px 10px rgb(246, 206, 6)" }} >Vaidehi Vaishnav</h2>
               </div>
             </div>
