@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 function Post( {_id,author, title, description,cover_image,publication_year,price}) {
   return (  
-    <div className='shadow mb-5 bg-dark bg-gradient text-light rounded mx-3'style={{width:"400px",height:"360px"}}>
+    <div className='shadow mb-5 bg-dark bg-gradient text-light rounded mx-3'style={{width:"400px",height:"410px"}}>
               <img src={cover_image} alt="..." className='img-fluid w-100' style={{height:200}}/>
               <h5 className='text-warning'>{title}</h5>
               <div className='d-flex flex-wrap justify-content-between'>
