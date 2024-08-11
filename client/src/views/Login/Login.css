@@ -21,16 +21,23 @@
 }
 
 .button {
-    background: linear-gradient(25deg, rgb(246, 206, 6),rgba(26, 21, 0, 0.465));
+    background: linear-gradient(25deg, rgb(246, 206, 6), rgba(26, 21, 0, 0.465));
     border: "none";
     margin-left: 24%;
     width: 150px;
 }
-p {
-    font-size:large;
+
+.para {
+    font-size: large;
     position: relative;
-    bottom:110px;
-    left:53%;
+    bottom: 110px;
+    left: 53%;
+}
+
+.crd:hover {
+    transform: translateY(-10px);
+    border:4px solid rgb(254, 186, 40);
+    box-shadow: 0 15px 20px rgb(254, 186, 40);
 }
 
 @media (max-width:480px) {
@@ -50,13 +57,13 @@ p {
     strong {
         font-size: smaller;
         position: relative;
-        right:50px;
+        right: 50px;
         bottom: 20px;
     }
 
     .custom-placeholder {
         font-size: smaller;
-        width:140px;
+        width: 140px;
         position: relative;
         right: 50px;
         bottom: 20px;
@@ -69,24 +76,24 @@ p {
     }
 
     h1 {
-        color:white;
+        color: white;
         position: relative;
-        left:20px;
+        left: 20px;
         top: 0px;
     }
 
-    p {
-        font-size:9px;
+    .para {
+        font-size: 9px;
         position: relative;
-        bottom:50px;
-        left:140px;
+        bottom: 50px;
+        left: 140px;
     }
 
     .button {
         width: 100px;
         position: relative;
         top: 0px;
-        right:17px;
+        right: 17px;
     }
 }
 
@@ -133,11 +140,11 @@ p {
         left: 90%;
     }
 
-    p {
+    .para {
         font-size: smaller;
         position: relative;
-        bottom:60px;
-        left:25%;
+        bottom: 60px;
+        left: 32%;
     }
 
     .button {
@@ -147,7 +154,8 @@ p {
         left: 60%;
     }
 }
-@media (min-width: 768px) and (max-width: 1024px){
+
+@media (min-width: 768px) and (max-width: 1024px) {
     * {
         margin: 0;
         padding: 0
@@ -156,6 +164,7 @@ p {
     form {
         width: 700px;
     }
+
     .box {
         box-shadow: none;
     }
@@ -184,11 +193,11 @@ p {
         top: 0px;
     }
 
-    p {
-        font-size:small;
+    .para {
+        font-size: small;
         position: relative;
-        bottom:70px;
-        left:52%;
+        bottom: 70px;
+        left: 52%;
     }
 
     .button {
@@ -196,30 +205,33 @@ p {
     }
 
 }
+
 @media (min-width: 1025px) and (max-width: 1280px) {
-    p {
+    .para {
         font-size: smaller;
         position: relative;
-        bottom:100px;
-        left:55%;
+        bottom: 100px;
+        left: 55%;
     }
+
     strong {
         font-size: larger;
         position: relative;
         bottom: 20px;
-        right:30px
+        right: 30px
     }
 
     .custom-placeholder {
         font-size: large;
-        width:250px;
+        width: 250px;
         position: relative;
         bottom: 20px;
-        right:30px;
+        right: 30px;
     }
+
     .button {
         width: 150px;
         position: relative;
-        right:25px;
+        right: 25px;
     }
 }

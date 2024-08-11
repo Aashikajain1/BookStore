@@ -33,7 +33,7 @@ function Home() {
         <br /><br /><br />
         <h3 className=" text-warning fs-1 ms-5 "><b>Welcome to the World Of Imagination! </b></h3>
         <h3 className="text-white fs-1 ms-5">Hold a conversation with the Author, </h3>
-        <h3 className="text-white ms-5" >Get Lost in the Pages , Where Words Come to Life..</h3>
+        <h3 className="text-light ms-5" >Get Lost in the Pages , Where Words Come to Life..</h3>
         <h3 className="text-white ms-5" >Discover, Dream, Dive In!!!</h3>
         <button className="btn btn-outline-light btn-lg ms-5 "><Link to="/books" className="nav-link active ">Explore</Link></button>
       </div>

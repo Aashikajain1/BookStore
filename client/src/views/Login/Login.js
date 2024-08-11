@@ -87,7 +87,7 @@ function Login() {
                     </div>
                 </div>
             </div>
-            <p className='text-warning'>New User?Create New Account <Link className='text-decoration-none text-light' to="/signup">SignUp</Link></p>
+            <p className='text-warning para'>New User?Create New Account <Link className='text-decoration-none text-light' to="/signup">SignUp</Link></p>
         </div>
 
     )

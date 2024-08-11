@@ -53,15 +53,15 @@ function Contact(_) {
                     <div className='bg-dark d-flex flex-wrap justify-content-around'>
                         <div className='d-flex flex-column'>
                             <img src={I2} alt="loading" className='m-5' style={{ width: "40px" }} />
-                            <h2 className='text-warning'>7385122661 </h2>
+                            <a href="tel:7385122661" className='fs-3 text-warning text-decoration-none'>7385122661 </a>
                         </div>
                         <div className='d-flex flex-column'>
                             <img src={I1} alt="loading" className='m-5' style={{ width: "40px" }} />
-                            <h2 className='text-warning '>Bookstore@gamil.com </h2>
+                            <a href="mailto:jainaashika@1510" className='fs-3 text-warning text-decoration-none'>Bookstore@gamil.com </a>
                         </div>
                         <div className='d-flex flex-column'>
                             <img src={I3} alt="loading" className='m-5' style={{ width: "40px" }} />
-                            <h2 className='text-warning '>Bookstore</h2>
+                            <a href="/" className='fs-3 text-warning text-decoration-none'>Bookstore</a>
                         </div>
                     </div>
                 </div>
@@ -70,8 +70,8 @@ function Contact(_) {
                 <div className=' d-flex  mt-5 justify-content-center flex-wrap'>
                     <img src={bg2} className=' w-25' alt="loading" />
                     <div className='w-50 bg-dark'>
-                        <h2 className='bg-warning text-dark text-center p-3'>Thanks for contacting us</h2>
-                        <h3 className='my-5 mx-5 text-warning mx-1'>Name</h3>
+                        <p className='fs-3 bg-warning text-dark text-center p-3'>Thanks for contacting us</p>
+                        <p className='fs-3 my-5 mx-5 text-warning mx-1'>Name</p>
                         <input
                             type='text'
                             placeholder="Enter Name"
@@ -81,7 +81,7 @@ function Contact(_) {
                             }}
                             className='p-2 w-75 border border-5 border-warning mx-5 '
                         /><br />
-                        <h3 className='my-5 mx-5 text-warning mx-1'>Email</h3>
+                        <p className='fs-3 my-5 mx-5 text-warning mx-1'>Email</p>
                         <input
                             type='text'
                             placeholder="Enter Email"
@@ -91,7 +91,7 @@ function Contact(_) {
                             }}
                             className='p-2 w-75 border border-5 border-warning mx-5 '
                         /><br />
-                        <h3 className='my-5 mx-5 text-warning mx-5'>Message</h3>
+                        <p className='fs-3 my-5 mx-5 text-warning mx-5'>Message</p>
                         <input
                             type='text'
                             placeholder="Enter Message"

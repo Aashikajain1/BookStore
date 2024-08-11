@@ -18,7 +18,7 @@ function Shop() {
   return (
     <div>
         <Header />
-        <div className='mt-5 d-flex flex-wrap justify-content-between mx-5 mb-5'>
+        <div className='mt-5 d-flex flex-wrap justify-content-around mx-5 mb-5'>
             {
                books.map((bookObj) => {
                 const { _id,author, title, description, cover_image, publication_year,price } = bookObj;

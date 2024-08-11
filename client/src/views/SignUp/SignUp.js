@@ -87,7 +87,7 @@ function SignUp() {
                             </div>
                         </div>
                     </div>
-                    <p className='text-warning'>Already Registered ?<Link to="/login" className='text-decoration-none text-light'>Login or SignIn</Link></p>
+                    <p className='text-warning para'>Already Registered ?<Link to="/login" className='text-decoration-none text-light'>Login or SignIn</Link></p>
                 </div>
            
 

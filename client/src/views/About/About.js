@@ -1,5 +1,4 @@
 import React from 'react';
-import p1 from "./c2.png";
 import p2 from "./p3.jpeg";
 import p3 from "./extra.gif";
 import p4 from "./p4.jpg"
@@ -22,20 +21,20 @@ const About = () => {
               />
             </div>
             <div className="mx-5 mb-5 mt-5 d-flex flex-wrap justify-content-around bg-dark">
-              <div className=" text-white border-2 rounded mt-5 " style={{ height: "340px", width: "300px", boxShadow: "0px 0px 10px rgb(246, 206, 6)" }}>
+              <div className=" text-white border-2 rounded mt-5 " style={{ height: "440px", width: "300px", boxShadow: "0px 0px 10px rgb(246, 206, 6)" }}>
                 <h3 className="mt-3 text-center" style={{ color: '#ffcc00 ' }}>Welcome to Our Bookstore</h3>
                 <h5 className='text-wrap mx-4' style={{ textAlign: "justify" }}>
                   Discover a world of books at our bookstore! From timeless classics to the latest bestsellers, we have something for every reader.
                   Our goal is to create a cozy environment where you can explore, relax, and find your next favorite read.
                 </h5>
               </div>
-              <div className=" text-white  border-2 rounded mt-5" style={{ height: "340px", width: "300px", boxShadow: "0px 0px 10px rgb(246, 206, 6)" }}>
+              <div className=" text-white  border-2 rounded mt-5" style={{ height: "440px", width: "300px", boxShadow: "0px 0px 10px rgb(246, 206, 6)" }}>
                 <h3 className="mt-3 text-center" style={{ color: '#ffcc00' }}>Our Mission</h3>
                 <h5 className='text-wrap mx-4' style={{ textAlign: "justify" }}>
                   We aim to inspire a love of reading and provide a haven for book lovers. Our store is more than just a place to buy books; it’s a place to connect with fellow readers, attend events, and engage with the literary community.
                 </h5>
               </div>
-              <div className=" text-white  border-2 rounded mt-5" style={{ height: "340px", width: "300px", boxShadow: "0px 0px 10px rgb(246, 206, 6)" }}>
+              <div className=" text-white  border-2 rounded mt-5" style={{ height: "440px", width: "300px", boxShadow: "0px 0px 10px rgb(246, 206, 6)" }}>
                 <h3 className="mt-3 text-center" style={{ color: '#ffcc00' }}>Our Values</h3>
                 <h5 className='text-wrap mx-4' style={{ textAlign: "justify" }}>
                   At our bookstore, we value community, knowledge, and the joy of reading. We strive to support local authors, foster a love for literature, and create a welcoming space for everyone.
@@ -46,12 +45,12 @@ const About = () => {
               <h2 className='text-warning text-center mt-4'>Our Team</h2>
             <div className=" d-flex flex-wrap justify-content-around rounded bg-dark ">
               <div className=" text-white border-2 rounded  " >
-                <img className="rounded-top" src={p4} style={{ height: "340px", width: "300px" }} />
-                <h2 className='text-light text-center rounded-bottom' style={{boxShadow: "inset 0px 0px 10px rgb(246, 206, 6)" }} >Aashika Jain</h2>
+                <img className="rounded-top img-fluid px-5 " alt="loading" src={p4} style={{ height: "340px", width: "400px" }}  />
+                <h2 className='text-light text-center mx-5 rounded-bottom' style={{boxShadow: "inset 0px 0px 10px rgb(246, 206, 6)" }} >Aashika Jain</h2>
               </div>
               <div className=" text-white border-2 rounded " >
-                <img className="rounded-top" src={p2} style={{ height: "340px", width: "300px" }} />
-                <h2 className='text-light text-center  border border-bottom-0 border-warning' style={{boxShadow: "inset 0px 0px 10px rgb(246, 206, 6)" }} >Vaidehi Vaishnav</h2>
+                <img className="rounded-top img-fluid px-5" src={p2}ALT="LOADING" style={{ height: "340px", width: "400px" }} />
+                <h2 className='text-light text-center mx-5 border border-bottom-0 border-warning' style={{boxShadow: "inset 0px 0px 10px rgb(246, 206, 6)" }} >Vaidehi Vaishnav</h2>
               </div>
             </div>
             </div>

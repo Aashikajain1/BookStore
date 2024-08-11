@@ -5,8 +5,8 @@ function Services(){
     return (
         <div>
             <div className='bg-black bg-gradient'>
-                <h1 className='text-center text-warning '>OUR SERVICES</h1>
-                <div className="d-flex flex-wrap justify-content-between ">
+                <p className='fs-1 text-warning d-flex justify-content-center'>OUR SERVICES</p>
+                <div className="d-flex flex-wrap justify-content-around">
                     {
                         CARD.map((cardObj) =>{
 
