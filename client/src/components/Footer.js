@@ -4,21 +4,21 @@ import { Link } from 'react-router-dom'
 export default function Footer() {
   return (
     <footer className='bg-black bg-gradient text-light '>
-      <div className='d-flex flex-wrap justify-content-between'>
-        <div className='d-flex flex-column ms-5 nav justify-content-center'>
+      <div className='d-flex flex-wrap justify-content-around'>
+        <div className='d-flex flex-column nav justify-content-center'>
           <li className='nav-item'><Link className=" nav-link text-warning mt-3 mb-0 fs-5" to="/">Home</Link></li>
           <li className='nav-item'><Link className=" nav-link text-warning mt-3 mb-0 fs-5" to="/books">Shop</Link></li>
           <li className='nav-item'><Link className=" nav-link text-warning mt-3 mb-0 fs-5" to="/about">About</Link></li>
           <li className='nav-item'><Link className=" nav-link text-warning mt-3 mb-0 fs-5" to="/Contact">Contact Us</Link></li>
         </div>
-        <div className='d-flex flex-column ms-5 nav justify-content-center'>
+        <div className='d-flex flex-column justify-content-around ms-5' style={{width:"300px"}}>
           <li className='d-flex flex-row m-3'><img className="text-warning mt-3  mb-0 fs-5 " style={{ width: "30px" }} src="/phone.png" /><a href="tel:7385122661" className='text-warning text-decoration-none m-3'>738512261</a></li>
           <li className='d-flex flex-row m-3'><img className="text-warning mt-3  mb-0 fs-5 " style={{ width: "30px" }} src="/email.png" /><a href="mailto:jainaashika1510@gmail.com" className='text-warning text-decoration-none m-3'>Bookstore@gamil.com</a></li>
           <li className='d-flex flex-row m-3'><img className="text-warning mt-3  mb-0 fs-5 " style={{ width: "30px" }} src="/map.png" /><a href="/contact" className='text-warning text-decoration-none m-3'> Police Nagar, Nagpur, Digdoh, Maharashtra 440016</a></li>
         </div>
-        <div className='d-flex flex-column w-25 justify-content-evenly'>
-          <p className='text-warning fs-3'>Know more</p>
-          <p className='text-warning'>At Bookstore, we bring stories to life.Our passion for books has connected readers and built a vibrant community. Visit us to discover your next great read!
+        <div className='d-flex flex-column justify-content-around' style={{width:"300px"}}>
+          <p className='text-warning fs-3 mx-5'>Know more</p>
+          <p className='text-warning text-wrap mx-5'>At Bookstore, we bring stories to life.Our passion for books has connected readers and built a vibrant community. Visit us to discover your next great read!
           </p>
         </div>
         <div className='d-flex flex-column justify-content-around m-5'>
