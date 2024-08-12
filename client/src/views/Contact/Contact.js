@@ -57,7 +57,7 @@ function Contact(_) {
                         </div>
                         <div className='d-flex flex-column'>
                             <img src={I1} alt="loading" className='m-5' style={{ width: "40px" }} />
-                            <a href="mailto:jainaashika@1510" className='fs-3 text-warning text-decoration-none'>Bookstore@gamil.com </a>
+                            <a href="mailto:jainaashika@1510" className='fs-3 text-warning text-decoration-none'>Bookstore@gmail.com </a>
                         </div>
                         <div className='d-flex flex-column'>
                             <img src={I3} alt="loading" className='m-5' style={{ width: "40px" }} />
