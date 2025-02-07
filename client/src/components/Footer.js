@@ -13,7 +13,7 @@ export default function Footer() {
         </div>
         <div className='d-flex flex-column justify-content-around ms-5' style={{width:"300px"}}>
           <li className='d-flex flex-row m-3'><img alt="loading" className="text-warning mt-3  mb-0 fs-5 " style={{ width: "30px" }} src="/phone.png" /><a href="tel:7385122661" className='text-warning text-decoration-none m-3'>738512261</a></li>
-          <li className='d-flex flex-row m-3'><img alt="loading" className="text-warning mt-3  mb-0 fs-5 " style={{ width: "30px" }} src="/email.png" /><a href="mailto:jainaashika1510@gmail.com" className='text-warning text-decoration-none m-3'>Bookstore@gamil.com</a></li>
+          <li className='d-flex flex-row m-3'><img alt="loading" className="text-warning mt-3  mb-0 fs-5 " style={{ width: "30px" }} src="/email.png" /><a href="mailto:jainaashika1510@gmail.com" className='text-warning text-decoration-none m-3'>Bookstore@gmail.com</a></li>
           <li className='d-flex flex-row m-3'><img alt="loading" className="text-warning mt-3  mb-0 fs-5 " style={{ width: "30px" }} src="/map.png" /><a href="/contact" className='text-warning text-decoration-none m-3'> Police Nagar, Nagpur, Digdoh, Maharashtra 440016</a></li>
         </div>
         <div className='d-flex flex-column justify-content-around' style={{width:"300px"}}>
