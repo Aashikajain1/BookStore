@@ -2,8 +2,9 @@ import React from 'react';
 import p2 from "./p3.jpeg";
 import p3 from "./extra.gif";
 import p4 from "./p4.jpg";
-import p5 from "./p5.png";
+import p5 from "./p5.jpeg";
 import p6 from "./p6.png";
+import p7 from "./p7.jpeg";
 import Header from '../../components/Header';
 import Footer from "../../components/Footer.js"
 const About = () => {
@@ -51,11 +52,11 @@ const About = () => {
                 <h2 className='text-light text-center mx-5 rounded-bottom' style={{boxShadow: "inset 0px 0px 10px rgb(246, 206, 6)" }} >Aashika Jain</h2>
               </div>
               <div className=" text-white border-2 rounded " >
-                <img className="rounded-top img-fluid px-5" src={p2}ALT="LOADING" style={{ height: "340px", width: "400px" }} />
-                <h2 className='text-light text-center mx-5 border border-bottom-0 border-warning' style={{boxShadow: "inset 0px 0px 10px rgb(246, 206, 6)" }} >Vaidehi Vaishnav</h2>
+                <img className="rounded-top img-fluid px-5" src={p5}ALT="LOADING" style={{ height: "340px", width: "400px" }} />
+                <h2 className='text-light text-center mx-5 border border-bottom-0 border-warning' style={{boxShadow: "inset 0px 0px 10px rgb(246, 206, 6)" }} >Drishti Pawar</h2>
               </div>
               <div className=" text-white border-2 rounded  " >
-                <img className="rounded-top img-fluid px-5 " alt="loading" src={p5} style={{ height: "340px", width: "400px" }}  />
+                <img className="rounded-top img-fluid px-5 " alt="loading" src={p7} style={{ height: "340px", width: "400px" }}  />
                 <h2 className='text-light text-center mx-5 rounded-bottom' style={{boxShadow: "inset 0px 0px 10px rgb(246, 206, 6)" }} >Aastha Gour</h2>
               </div>
               <div className=" text-white border-2 rounded  " >
